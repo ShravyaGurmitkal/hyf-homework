@@ -1,0 +1,173 @@
+body {
+    font-family: Arial,Helvetica,sans-serif;
+    margin: 0;
+    display: flex;
+    flex-flow: column wrap;
+    background-color: white;
+}
+
+h1,h2,h3 {
+    text-transform: uppercase;
+}
+
+body ul {
+    list-style-type: none;
+}
+
+body a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    color: steelblue;
+    background-color: whitesmoke;
+}
+
+header {
+    background-color: whitesmoke;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: flex-end;
+}
+
+header .siteheading {
+   padding: 30px 10px 40px 120px;
+}
+
+.siteheading h1 {
+    font-size: 35px;
+    margin: 0px;
+}
+
+.siteheading p {
+    font-size: 18px;
+    margin: 5px;
+}
+
+header .head-navigation {
+    background-color: white;
+}
+
+.head-navigation ul {
+    display: flex;
+    flex-flow: row wrap;
+    padding-left: 100px;
+}
+
+.head-navigation li {
+    margin: 10px 20px;
+}
+
+.officeimage img {
+    width: 100%;
+    height: 450px;
+    object-fit: cover;
+}
+
+main {
+    display: flex;
+    flex-flow: row wrap;
+    padding: 10px 60px 10px 90px;
+    margin-bottom: 30px;
+}
+
+main article {
+  margin: 20px 30px 30px 30px;
+  padding: 0px 10px 0px 10px;
+}
+
+.mainflex1,.mainflex3 {
+    flex: 30%;
+}
+  
+.mainflex2,.mainflex4 {
+    flex: 50%;
+}
+  
+.mainflex1 p,.mainflex3 p {
+     font-size: 16px;
+}
+  
+.mainflex2 p {
+    font-size: 20px;
+}
+
+.mainflex4 .logosflex {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.logosflex img {
+    margin: 40px 40px 40px 5px;
+}
+
+footer {
+    background-color: rebeccapurple;
+    display: flex;
+    flex-flow: row wrap;
+    padding: 40px 60px 40px 80px;
+    color: white;
+}
+
+footer nav,footer section {
+    flex: 1;
+}
+
+footer nav a {
+    color: white;
+}
+
+footer h3,.footerflex2 p{
+    padding-left: 40px;
+}
+
+.footerflex1 li {
+    margin-bottom: 5px;
+}
+
+.footerflex4 li,.footerflex3 li {
+    margin-bottom: 30px;
+}
+
+@media screen and (min-width: 720px) and (max-width: 920px) {
+
+    .logosflex img {
+       margin-right: 50px;
+        
+    }
+ 
+    footer nav,footer section {
+       flex: 50%;
+       padding-bottom: 20px;
+    }
+}
+
+@media screen and (max-width: 720px) {
+
+    footer {
+        flex-flow: column wrap;
+    }
+
+    footer nav,footer section {
+       padding-bottom: 20px;
+    }
+
+    main {
+        flex-flow: column wrap;
+    }
+}
+
+
+@media screen and (max-width: 600px) {
+    
+    .siteheading {
+        margin-left: 5px;
+    }
+
+    .head-navigation ul {
+        flex-flow: column wrap;
+        margin-left: 5px;
+    }
+
+}
