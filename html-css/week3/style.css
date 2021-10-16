@@ -1,0 +1,235 @@
+*{box-sizing: border-box;}
+
+body {
+    font-family: Arial,Helvetica,sans-serif;
+    margin: 0px;
+}
+
+/*  ------------------------------header styling in all pages ------------------------------*/
+header {
+    background-color: orange;
+    display: flex;
+    flex-flow: row wrap;
+    border-bottom: 2px solid steelblue;
+    width: 100%;
+    margin: 0px;
+}
+
+.logo-div {
+    padding: 1vw;
+}
+
+.headnav {
+    padding-right: 1.5vw;
+    flex: 2;
+    
+}
+
+.headnavlist {
+    list-style-type: none;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-end;
+}
+
+.headnavlist li {
+   margin: 20px;
+}
+
+.headnavlist a {
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+}
+
+/* ------------------------------progress bar-------------------------------------- */
+progress {
+    width: 80%;
+    height: 12px;
+    margin: 0.5vw;
+    -webkit-appearance: none;
+    
+}
+
+::-webkit-progress-bar {
+    background-color: whitesmoke;
+  }
+
+  ::-webkit-progress-inner-element {
+    border: 2px solid #3A6351;;
+    border-radius: 5px;
+  }
+
+  ::-webkit-progress-value {
+    background-color: orange;
+  }
+
+/* -------------------------------------------------------------------- */
+
+main h1 {
+    color: #3A6351;
+    padding: 1.5vw;
+    font-size: 45px;
+    margin-bottom: 10px;
+}
+
+.site-info {
+    padding-left: 1vw;
+    width: 60vw;
+    color: #082032;
+}
+
+.site-info p {
+    font-size: 20px;
+    padding: 1vw;
+    line-height: 28px;
+    margin: 0;
+}
+
+.signup-process {
+    padding: 1.5vw;
+    color: #082032;
+}
+
+.signup-process h2{
+    color: steelblue;
+    margin: 0;
+    font-size: 32px;
+}
+
+.signup-form {
+    display: flex;
+    flex-flow: column wrap;
+}
+
+.signup-status {
+    padding: 20px 0px;
+}
+
+.signup-status p,.form3-para  {
+    font-size: 18px;
+}
+
+
+.signup-form label {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 1vw;
+    text-align: right;
+}
+
+.signup-form input,.signup-form select {
+    width: 300px;
+    height: 40px;
+    border: 2px solid #3A6351;
+    border-radius: 10px;
+    margin: 0.5vw;
+}
+
+.form1-elements,.form2-elements,.form3-elements {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.names {padding: 1vw 1vw 2vw 6vw;}
+    
+.countries {padding: 1vw 1vw 2vw 7.5vw;}
+    
+.address-codes {padding: 1vw 1vw 2vw 3.5vw;}
+
+.profile-message {padding: 3vw 0vw;}
+
+.profile-label {
+    display: flex;
+    flex-flow: column wrap;
+    width:15%;
+    margin-right: 0.5vw;
+}
+
+.txt-msg {
+    font-size: 14px;
+    padding: 1vw 1vw 1vw 2.5vw;;
+}
+
+.profile-message textarea,.submit-button button,.shipping-checkox input{
+    border: 2px solid #3A6351;
+    border-radius: 10px;
+}
+
+.checkbox-info,.news-info {
+    font-size: 18px;
+    padding-left: 2vw;
+}
+
+.shipping-checkox {
+    padding: 1vw 1vw 1vw 2.5vw;
+}
+
+.shipping-checkox input {
+    width: 30px;
+    height: 30px;
+}
+
+.submit-button {
+    padding: 1vw 5vw;
+    justify-content: flex-end;
+}
+
+.submit-button button {
+    width: 200px;
+    height: 50px;
+    color: #082032;
+    background-color: orange;
+    font-size: 18px;
+}
+
+
+/* index3.html styling */
+.select-items img {
+    height: 230px;
+    width: 230px;
+}
+
+/* -------------------------------------------------------------------- */
+
+@media screen and (max-width: 600px) {
+
+    header,.profile-message {flex-flow: column wrap;}
+
+    .headnavlist {
+        flex-flow: column wrap;
+        padding: 0.5vw;
+    }
+
+    .headnavlist li {margin: 15px;}
+      
+    .site-info {width: 100%;}
+
+    .names div,.address-codes div {margin: 1vw 0vw;}
+
+    .names div {padding-left: 3.5vw;}
+
+    .countries {margin-left: 6.5vw;}
+
+    .address-codes .p-code {padding-left: 6vw;}
+
+    .profile-label {flex-flow: row wrap; width: 100%;}
+
+    .profile-message textarea {
+        width: 70%;
+        height: 100px;
+        margin: 1.5vw;
+    }  
+    
+    .news-types {
+        display: flex;
+        flex-flow: column wrap;
+    }
+
+    .submit-button {
+        padding: 3vw;
+        justify-content: center;
+    }
+    
+
+}

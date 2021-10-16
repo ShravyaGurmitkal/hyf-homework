@@ -1,0 +1,66 @@
+.contact-info {padding: 1vw 1vw 1vw 9vw;}
+
+.first-pwd {padding: 1vw 1vw 1vw 6.5vw;}
+
+.re-pwd {padding: 1vw 3.5vw 1vw 1vw;}
+
+.news-types {
+    padding: 1vw 3.5vw 3vw 2.5vw;
+
+}
+
+.news-types input {
+    margin: 0vw;
+   
+    width: 20px;
+}
+
+.news-radio {
+    display: flex;
+    flex-flow: row wrap;
+    
+    flex: 1vw
+}
+
+/*--------------------------------*/
+
+.form3-lielements {
+    display: flex;
+    flex-flow: column wrap;
+    width: 600px;
+    height: 200px;
+    
+    padding: 5px 10px 0px 5px;
+
+}
+
+.item-kinds li {
+    list-style-type: none;
+  
+    text-align: right;
+    
+}
+
+.select-items .image-select {
+    margin: 1vw 3vw;
+    background-color: whitesmoke;
+    width: 240px;
+    height: 300px;
+}
+
+.image-select img {
+    padding: 1vw;
+    justify-content: center;
+}
+
+.select-items input,.select-items label {
+    margin: 0vw;
+}
+
+.select-items input {height: 30px;}
+
+.image-select div {
+    display: flex;
+    width: 70%;
+    padding: 1vw;
+}

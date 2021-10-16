@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width initial-scale=1.0">
+        <title>Custom Tailor Site</title>
+        <link href="./style.css" rel="stylesheet" />
+        <link href="./style2.css" rel="stylesheet" />
+    </head>
+
+    <body>
+        <header>
+            <div class="logo-div">
+                <img src="./Images/logo64.png" alt="Website Logo">
+            </div>
+            <nav class="headnav">
+                <ul class="headnavlist">
+                    <li><a href="#">Sign up</a></li>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Cart</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <h1>Sign up to <em>yourcustomtailor.com</em></h1>
+            <section class="signup-process">
+                <h2>Step 3/3 - <em>Time to learn about your preferences?</em></h2>
+                <form action="index1.html" method="POST" class="signup-form">
+                    <div class="signup-status">
+                        <label for="signup">Progress</label><br>
+                        <progress id="signup" value="85" max="100"> 32% </progress>
+                    </div>
+                    <p class="form3-para">What kind of items are you interested in offers on?</p>
+                    <ul class="form3-lielements item-kinds">
+                        <li><label for="apparal">Apparal</label>
+                            <input type="checkbox" id="apparal" name="apparal" class="items"></li>
+                        <li><label for="accessories">Accessories</label>
+                            <input type="checkbox" id="accessories" name="accessories" class="items"></li>
+                        <li><label for="handbags">Handbags</label>
+                            <input type="checkbox" id="handbags" name="handbags" class="items"></li>
+                        <li><label for="jewelry">Jewelry</label>
+                            <input type="checkbox" id="jewelry" name="jewelry" class="items"></li>
+                        <li><label for="shoes">Shoes</label>
+                            <input type="checkbox" id="shoes" name="shoes" class="items"></li>
+                    </ul>
+                    <p class="form3-para">Choose the images that best resemble your style</p>
+                    <section class="form3-elements select-items">
+                        <div class="image-select">
+                            <img src="./Images/pink-gown.jpg" alt="pink-gown">
+                            <div>
+                                <label for="select1">Gown</label>
+                                <input type="checkbox" id="select1" name="select1"> 
+                            </div>
+                        </div>
+                        <div class="image-select">
+                            <img src="./Images/frock-red.jpg" alt="red-frock">
+                            <div>
+                                <label for="select2">Frock</label>
+                                <input type="checkbox" id="select2" name="select2">
+                            </div>
+                        </div>
+                        <div class="image-select">
+                            <img src="./Images/boy-dress.jpg" alt="boy-dress">
+                            <div>
+                                <label for="select3">Suit</label>
+                                <input type="checkbox" id="select3" name="select3">
+                            </div>
+                        </div>
+                        <div class="image-select"> 
+                            <img src="./Images/baby-dress.jpg" alt="baby-dress">
+                            <div>
+                                <label for="select4">Dress</label>
+                                <input type="checkbox" id="select4" name="select4">
+                            </div>
+                        </div>
+                        <div class="image-select">
+                            <img src="./Images/handbag.jpg" alt="handbag">
+                            <div>
+                                <label for="select5">Handbag</label>
+                                <input type="checkbox" id="select5" name="select5">
+                            </div>
+                        </div>
+                        <div class="image-select">
+                            <img src="./Images/chain.jpg" alt="chain">
+                            <div>
+                                <label for="select6">Chain</label>
+                                <input type="checkbox" id="select6" name="select6">
+                            </div>
+                        </div>
+                        <div class="image-select">
+                            <img src="./Images/watch.jpg" alt="watch">
+                            <div>
+                                <label for="select7">Watch</label>
+                                <input type="checkbox" id="select7" name="select7">
+                            </div>
+                        </div>
+                        <div class="image-select">
+                            <img src="./Images/shoes.jpg" alt="shoes">
+                            <div>
+                                <label for="select8">Shoes</label>
+                                <input type="checkbox" id="select8" name="select8">
+                            </div>
+                        </div>
+                    </section>
+                    <div class="form3-elements submit-button">
+                        <button type="submit">Next step</button>
+                    </div>
+                </form>
+            </section>
+        </main>
+    </body>

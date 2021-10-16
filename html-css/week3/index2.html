@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width initial-scale=1.0">
+        <title>Custom Tailor Site</title>
+        <link href="./style.css" rel="stylesheet" />
+        <link href="./style2.css" rel="stylesheet" />
+    </head>
+
+    <body>
+        <header>
+            <div class="logo-div">
+                <img src="./Images/logo64.png" alt="Website Logo">
+            </div>
+            <nav class="headnav">
+                <ul class="headnavlist">
+                    <li><a href="#">Sign up</a></li>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Cart</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <h1>Sign up to <em>yourcustomtailor.com</em></h1>
+            <section class="signup-process">
+                <h2>Step 2/3 - <em>how can we reach you?</em></h2>
+                <form action="index3.html" method="POST" class="signup-form">
+                    <div class="signup-status">
+                        <label for="signup">Progress</label><br>
+                        <progress id="signup" value="60" max="100"> 32% </progress>
+                        <p>We will probably need to stay in touch somehow. Let we know how we can reach you?</p>
+                    </div>
+                    <div class="form2-elements contact-info">
+                            <label for="email">Email*</label>
+                            <input type="email" id="email" name="email" pattern="\w{3,}@[A-Za-z]{3,}\.com"required>
+                       
+                            <label for="phone">Phone</label>
+                            <input type="tel" id="phone" name="phone" pattern="[0-9]{8}">
+                    
+                    </div>
+                    <div class="form2-elements first-pwd">
+                        <label for="pwd">Password*</label>
+                        <input type="password" id="pwd" name="password" minlength="10" required>
+                    </div>
+                    <div class="form2-elements re-pwd"> 
+                        <label for="repwd">Re-enter Password*</label>
+                        <input type="password" id="repwd" name="re-password" minlength="10" required>
+                    </div>
+                    <p class="news-info">I want to sign up for the newsletter</p>
+                    <div class="form2-elements news-types">
+                           <!-- <label for="wnews">Weekly news</label>
+                            <input type="radio" id="wnews" name="news" checked>
+                            <label for="mnews">Monthly news</label>
+                            <input type="radio" id="mnews" name="news">
+                            <label for="nonews">Don't send me news</label>
+                            <input type="radio" id="nonews" name="news"> -->
+                        <span class="news-radio">
+                            <label for="wnews">Weekly news</label>
+                            <input type="radio" id="wnews" name="news" checked>
+                        </span>
+                        <span class="news-radio">
+                            <label for="mnews">Monthly news</label>
+                            <input type="radio" id="mnews" name="news">
+                        </span>
+                        <span class="news-radio">
+                            <label for="nonews">Don't send me news</label>
+                            <input type="radio" id="nonews" name="news">
+                        </span>
+                    </div>
+                    <div class="form2-elements submit-button">
+                        <button type="submit">Next step</button>
+                    </div>
+                </form>
+            </section>
+        </main>
+    </body>
