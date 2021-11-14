@@ -32,3 +32,15 @@ function logOutNotesFormatted() {
 }
   
 logOutNotesFormatted();
+
+//Unique feature to pin the important note to top in the notes using id 
+function toPinImpNotes(id) {
+    if (id !== undefined || typeof id === 'number') {
+        const impNote = notes.find(note => note.id === id)
+        notes.splice(notes.indexOf(impNote),1);
+        notes.unshift(impNote);
+        console.log(notes);
+    }
+}
+
+toPinImpNotes(2);
