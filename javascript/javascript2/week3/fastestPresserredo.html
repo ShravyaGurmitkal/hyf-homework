@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fastestPresserredo</title>
+    <link href="./fastestPresserredo.css" rel="stylesheet" />
+</head>
+<body>
+    <header>
+        <h1>Fastest Presser</h1>
+    </header>
+
+    <section class='formElements'>
+        <div>
+            <input type="number" id='timeInputMarkup' placeholder="Set seconds"/>
+        </div>
+        <div class='gameButtons'>
+            <button id='startGameMarkup'>Start game!</button>
+            <button id='restartGameMarkup'>Restart game</button>
+        </div>
+    </section>  
+
+    <section class='gameSection'>
+        <div>
+            <h2>Press S</h2>
+            <h4 id='countSMarkup'></h4>
+        </div>
+        <div>
+            <h2>Press L</h2>
+            <h4 id='countLMarkup'></h4>
+        </div>
+    </section>
+
+    <section id='winnerInfo'>
+        <h1 id='timer'></h1>
+        <h1 id='winnerMarkup'></h1>
+        <img id='winnerGifMarkup' height="150px">
+    </section>
+
+    <div class='clearButtonDiv'>
+        <button id='clearGameMarkup'>Clear game</button>
+    </div>
+
+    <script src="fastestPresserredo.js"></script>
+</body>
+</html>
