@@ -1,0 +1,47 @@
+body {
+    background-color: white;
+    font-style: italic;
+    display: flex;
+    flex-flow: column wrap;
+    align-content: center;
+    border: 2px solid teal;
+    margin: 3em 6em;
+}
+
+#title, #gifText, #gifNum, #searchGif, #msg, .listDiv {
+    margin: 1em;
+}
+
+#title {
+    color: teal;
+    font-size: 45px;
+}
+
+#gifText, #gifNum {
+    border: 2px solid teal;
+}
+
+#searchGif {
+    font-style: italic;
+    background-color: orange;
+    font-size: 16px;
+    border: 2px solid teal;
+}
+
+#gifsList li {
+    list-style-type: none;
+    margin-bottom: 1.5em;
+    text-align: center;
+}
+
+#gifsList img {
+    width: 400px;
+    height: 450px;
+    border-radius: 5px;
+}
+
+@media screen and (max-width: 720px) {
+    body {
+        margin: 1em;
+    }
+}
