@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link href="./weather.css" rel="stylesheet"/>
+</head>
+
+<body>
+    <header class="logo">
+            <img src="https://raw.githubusercontent.com/bugsounet/MMM-Weather/master/logo.png">
+            <!-- <img src="https://www.fonedog.com/image/weather-app.png"> -->
+    </header>
+
+    <main class="allWeatherDetails">
+        
+        <section class='currentDateTime'>
+            <h2 id='todaysDateH2'></h2>
+            <h2 id='currentTimeH2'></h2>
+        </section>
+        
+        <section class='mainWeatherDetails'>
+            <div class='allInputs'>
+                <span class='inputSpan'>
+                    <label for="cityInputMarkup">Enter the city name: </label>
+                    <input type="text" id="cityInputMarkup">
+                </span>
+                <span>
+                    <button type="submit" id="weatherButtonMarkup">Get City Weather</button>
+                    <button type="submit" id="currentlocationweatherButton">Get current location Weather</button>
+                </span>
+            </div>
+
+            <div class='showWeatherDetails'>
+                <div class="details">
+                    <h1 id='cityname'></h1>
+                    <h1 id="temperature"></h1>
+                    <img id='weatherIcon'>
+                    <h2 id="cloudyDetails"></h2>
+                    <h2 id="feelsLike"></h2>
+                    <h2 id="windSpeed"></h2>
+                    <p id='timeinfo'></p>
+                    <h2 id="locationCurrentDate"></h2>
+                    <h2 id='locationCurrentTime'></h2>
+                    <h2 id="sunrise"></h2>
+                    <h2 id="sunset"></h2>
+                </div>
+                
+                <div class='locationMap'>
+                    <iframe loading="lazy" id="mapLocation"></iframe>
+                </div>
+            </div>
+        </section>
+
+     </main>
+
+    <script src="weather.js"></script>
+</body>
+</html>
