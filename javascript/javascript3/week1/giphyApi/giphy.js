@@ -1,6 +1,7 @@
 let msgH1 = document.getElementById('msg');
 let gifsUl = document.getElementById('gifsList');
-document.getElementById('searchGif').addEventListener('click', getGifs);
+ const searchButton = document.getElementById('searchGif');
+searchButton.addEventListener('click', getGifs);
 
 function getGifs() {
     msgH1.innerText = '';
