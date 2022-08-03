@@ -34,11 +34,16 @@ getNewSpiritButton.addEventListener('click', function() {
 })
 
 //function to get the spirit animal name
-function getSpiritName() {
-    const inputValue = inputField.value.trim();
-    if(inputValue.length !== 0) {
-        (newSpiritAnimals.length === 0) ? spiritNameH1.innerHTML = inputValue + '-' + spiritAnimals[Math.floor(Math.random() * spiritAnimals.length)]: spiritNameH1.innerHTML = inputValue + '-' + newSpiritAnimals[Math.floor(Math.random() * newSpiritAnimals.length)];
-    } else {
-        spiritNameH1.innerHTML = 'Please, specify your name to get the Spirit Name';
-    }
+function getSpiritName(humanName, unusedAnimalNames) {
+  if (!humanName) {
+    return  'Please, specify your name to get the Spirit Name';
+  }
+  
+  const animalNames = unusedAnimalNames.length !== 0 ? unusedAnimalNames : spiritAnimals;
+  
+  const index = getRandomIndex(animalNames.length);
+  return `${humanName}-${animalNames[index]}`;
 }
+
+function getRandomIndex(limit) {
+  return Math.floor(Math.random() * limit)
