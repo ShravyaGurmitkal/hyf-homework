@@ -16,7 +16,7 @@ async function asyncSetTime () {
 }
 
 setTime(2).then(() => {
-    console.log("I am called asynchronously"); // logged out after 8 seconds
+    console.log("I am called asynchronously");
   })
   .catch((error) => console.log(error));
 
