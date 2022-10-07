@@ -33,26 +33,3 @@ export default function TodoList() {
         </div>
     )
 }
-
-// function TodoListItem (props) {
-//     console.log(props);
-//     const {todo, id} = props;
-//     console.log(todo, id);
-//     return (
-//         <li>
-//             <label id={id}>
-//                 {todo.description}
-//                 <input type="checkbox" onChange={() => markTodo(id)}/>
-//             </label>
-//             <button onClick={() => deleteTodo(id)}>Delete</button>
-//         </li>
-//     )
-// }
-
-// function markTodo(todoId) {
-//     console.log(todoId);
-//     console.log(document.querySelectorAll('label'));
-//     const label = document.querySelectorAll('label')[todoId-1];
-//     console.log(label.children.item(0).checked);
-//     (label.children.item(0).checked) ?  label.style.textDecoration = "line-through" :  label.style.textDecoration = "none"
-// }
