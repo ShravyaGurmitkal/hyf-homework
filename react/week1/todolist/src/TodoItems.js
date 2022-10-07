@@ -1,6 +1,6 @@
-import { todos } from "./TodoList";
+import { todos } from "./todosCollection";
 
-export default function Items() {
+export default function TodoList() {
     return (
         <main>
             <ul style={{listStyle:"none"}}>
