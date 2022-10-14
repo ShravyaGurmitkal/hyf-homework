@@ -21,7 +21,7 @@ app.get('/search', (req,res) => {
             if (resultsArray.length !== 0) {
                 res.send(resultsArray);
             } else {
-                res.status(400).send(`There are no items with searched value`);
+                res.status(404).send(`There are no items with searched value`);
             }
         }
     } catch (e) {
@@ -38,7 +38,7 @@ app.get('/documents/:id', (req,res) => {
         if (resultsArray !== undefined) {
             res.send(resultsArray);
         } else {
-            res.status(400).send(`There are no items with searched id`);
+            res.status(404).send(`There are no items with searched id`);
         }
     } catch (e) {
         console.error(e);
@@ -72,7 +72,7 @@ app.post('/search', (req,res) => {
         if (resultsArray.length !== 0) {
             res.send(resultsArray);
         } else {
-            res.status(400).send(`There are no items with searched value`);
+            res.status(404).send(`There are no items with searched value`);
         }
        }
     } catch (e) {
