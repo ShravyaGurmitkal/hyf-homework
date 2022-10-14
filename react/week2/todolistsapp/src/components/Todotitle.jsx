@@ -1,7 +1,5 @@
 export default function Title() {
     return (
-        <header style={{textAlign: "center", color: "orange"}}>
-            <h1>TODO LISTS</h1>
-        </header>
+        <h1 style={{textAlign: "center", color: "orange"}}>TODO LISTS</h1>
     )
 }
