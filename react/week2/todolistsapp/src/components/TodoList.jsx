@@ -1,4 +1,4 @@
-import { todos } from "./todosCollection";
+import { todos } from "../data/todosCollection";
 import { useState } from "react";
 import TodoListItem from "./TodoListItem";
 
@@ -8,7 +8,7 @@ export default function TodoList() {
 
     function addTodo() {
         setTodoList(todoList.concat({
-            id: todoList.length + 1,
+            id: Math.random().toString(16).slice(2),
             description: randomTodos[Math.floor(Math.random() * randomTodos.length)]
         }))
     }
