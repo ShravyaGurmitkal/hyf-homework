@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' type="text/css" href="index.css" />
+    <title>Document</title>
+</head>
+<body>
+    <div class='checkboxes'>
+        <h1>Select the action/actions when to display your Spirit Name!!!!!</h1>
+        <span><input type='checkbox' name="clicksbutton" id='buttonClick' checked>
+        <label for='clicksbutton'>Clicks the button</label></span>
+        <span><input type='checkbox' name="hoversinput" id='inputHovers'>
+        <label for='hoversinput'>Hovers the input field</label></span>
+        <span><input type='checkbox' name="inputtext" id='inputText'>
+        <label for='inputtext'>Text written in input field</label></span>
+    </div>
+    <input type='text' id='inputname'>
+    <div class='submitbuttons'>
+        <button type="submit" id='getSpirit'>Click to get your Spirit Animal Name</button>
+        <button type="submit" id='changeSpirit'>Want to Change your Spirit Animal Name?</button>
+    </div>
+    <h1 id='spritname'></h1>
+    <script src='animalNameGenerator.js'></script>
+    <script src="shortestWord.js"></script>
+    <script src="countDanishLetters.js"></script>
+</body>
+</html>
