@@ -1,0 +1,48 @@
+.App {
+  text-align: center;
+}
+
+.borderDiv {
+  border: 2px solid teal;
+  border-radius: 20px;
+  padding: 20px;
+}
+
+.headerTitle {
+  color: orange
+}
+
+.allButtons {
+  font-size: 20px;
+  background-color: orange;
+  margin: 8px;
+  border: 2px solid teal;
+  border-radius: 5px;
+}
+
+.todoList {
+  display: flex;
+  flex-flow: column wrap;
+  align-content: center ;
+}
+
+.todoItems {
+  display: flex;
+  flex-flow: column wrap;
+  background-color: whitesmoke;
+  border: 2px solid orange;
+  border-radius: 25px;
+  font-size: 20px;
+}
+
+.todoLi {
+  margin: 15px;
+}
+
+.inputs {
+  font-size: 20px;
+}
+
+.inputs input {
+  margin: 5px;
+}
