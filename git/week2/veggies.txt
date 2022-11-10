@@ -1,5 +1,7 @@
 Potato
 Cabbage
-Carrort
+Capsicum
 Onions
 Cucumber
+Radish
+Brinjal
